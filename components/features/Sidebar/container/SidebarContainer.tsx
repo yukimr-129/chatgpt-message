@@ -41,6 +41,8 @@ export const SidebarContainer = memo(() => {
 
   const handleSignOut = useCallback(() => {
     signOut()
+
+    router.replace('/')
   }, [])
 
   return (
